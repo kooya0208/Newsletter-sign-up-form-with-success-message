@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <div class="case" id="card1">
+    <section class="card" >
+      <div class="input-form">
+          <h1 class="title">Stay updated!</h1>
+          <p class="sentence">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="check-box">
+            <div class="flex-box">
+              <img src="./assets/images/icon-list.svg" alt="" class="check">
+              <p class="">Product discovery and building what matters</p>
+            </div>
+            <div class="flex-box">
+              <img src="./assets/images/icon-list.svg" alt="" class="check">
+              <p class="">Measuring to ensure updates are a success</p>
+            </div>
+            <div class="flex-box">
+              <img src="./assets/images/icon-list.svg" alt="" class="check">
+              <p class="">And much more!</p>
+            </div>
+          </div>
+          <form class="address" id="signup-form">
+            <label class="item">Email address</label>
+            <input type="email" class="address-box" placeholder="email@company.com" required>
+            <button type="submit" class="button" id="subscribe">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+      </div>
+      <picture>
+        <source media="(max-width: 750px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <img class="img" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </picture>
+    </section>
+  </div>
+  
+  <!-- Sign-up form end -->
+  <section class="success none" id="card2">
+    <div class="success-card">
+      <img src="./assets/images/icon-success.svg" alt="" class="final-check">
+      <h1 class="success-title">Thanks for subscribing!</h1>
+      <p class="success-sentence">
+        A confirmation email has been sent to 
+        <strong>ash@loremcompany.com.</strong> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <a class="success-button" href="">
+        <p class="dismiss">Dismiss message</p>
+      </a>
+    </div> 
+  </section>
+</body>
+  <!-- javascriptの読み込み -->
+  <script type="text/javascript" src="./js/main.js"></script>
+</html>
